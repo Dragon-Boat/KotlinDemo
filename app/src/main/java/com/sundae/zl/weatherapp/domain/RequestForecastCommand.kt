@@ -7,9 +7,9 @@ import com.sundae.zl.weatherapp.ForecastRequest
  * on 2017-6-27.
 # Copyright 2017 netease. All rights reserved.
  */
-class RequestForecastCommand(val zipcode: String) : Command<ForecastList>{
+class RequestForecastCommand(private val zipCode: String) : Command<ForecastList>{
     override fun execute(): ForecastList {
-        val forecastRequest = ForecastRequest(zipcode)
+        val forecastRequest = ForecastRequest(zipCode)
         return ForecastDataMapper().convertFromDataModel(
                 forecastRequest.execute())
 

@@ -5,6 +5,7 @@ package com.sundae.zl.weatherapp.data
  * on 2017-5-27.
 # Copyright 2017 netease. All rights reserved.
  */
+
 data class ForecastResult(val city: City, val list: List<Forecast>)
 
 data class City(val id: Long, val name: String, val coord: Coordinates,
@@ -22,3 +23,4 @@ data class Temperature(val day: Float, val min: Float, val max: Float,
 
 data class Weather(val id: Long, val main: String, val description: String,
                    val icon: String)
+

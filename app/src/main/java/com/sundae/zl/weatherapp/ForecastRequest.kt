@@ -6,11 +6,12 @@ import com.sundae.zl.weatherapp.data.ForecastResult
 import java.net.URL
 
 /**
+ * 请求天气数据
  * Created by @author hzzhoulong
  * on 2017-6-27.
 # Copyright 2017 netease. All rights reserved.
  */
-public class ForecastRequest(val zipCode: String){
+class ForecastRequest(val zipCode: String){
 
     companion object{
         private val APP_ID = "4025ab9b1e918d8ea2bbdddd26068c51"
